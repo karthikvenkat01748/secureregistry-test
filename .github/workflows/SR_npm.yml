@@ -27,9 +27,6 @@ jobs:
              npm config set registry https://registry.stepsecurity.io/javascript
              npm config set //registry.stepsecurity.io/javascript/:_authToken "${NPM_TOKEN}::${IDENTIFIER}"
 
-      - name: Install dependencies
-        run: npm ci
-
       - name: Checkout
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
 
