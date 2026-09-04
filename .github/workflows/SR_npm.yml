@@ -1,4 +1,4 @@
-name: NPM Audit Endpoint Test
+name: NPM Audit Endpoint Test-1
 
 on:
   workflow_dispatch:
