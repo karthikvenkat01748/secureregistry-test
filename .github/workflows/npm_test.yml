@@ -11,6 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@v3
+        with:
+          egress-policy: audit
+
       - name: Harden the runner (Audit all outbound calls)
         uses: $/step-security/harden-runner
         with:
